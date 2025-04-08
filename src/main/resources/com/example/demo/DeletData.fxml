@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DelDataController">
+    <columnConstraints>
+        <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+   <children>
+      <AnchorPane  prefHeight="267.0" prefWidth="286.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label layoutX="26.0" layoutY="86.0" text="ID :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="145.0" prefHeight="20.0" prefWidth="56.0" text="Name :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="82.0" layoutY="83.0" promptText="Enter the ID" />
+            <TextField layoutX="82.0" layoutY="142.0" promptText="Enter the name" />
+            <Button layoutX="100.0" layoutY="202.0" mnemonicParsing="false" onAction="#onDeleteData" onDragDetected="#onDeleteData" prefHeight="50.0" prefWidth="96.0" style="-fx-background-color: black;" text="Delete" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

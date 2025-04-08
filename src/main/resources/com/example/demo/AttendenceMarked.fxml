@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" prefHeight="400.0" prefWidth="600.0" style="-fx-border-width: 2px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="398.0" prefWidth="598.0" style="-fx-border-width: 2px; -fx-border-color: black;">
+         <children>
+            <Label layoutX="177.0" layoutY="139.0" prefHeight="98.0" prefWidth="290.0" text="Attendence marked Successfully">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="238.0" layoutY="256.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #000000;" text="Confirm" textFill="#faf3f3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Accordion layoutX="100.0" layoutY="27.0" />
+            <BorderPane layoutY="-4.0" prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+               <center>
+                  <Label prefHeight="36.0" prefWidth="182.0" text="       Company Name" textFill="#fffbfb" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <ImageView fitHeight="73.0" fitWidth="85.0" layoutX="75.0" layoutY="159.0">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/check-mark.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

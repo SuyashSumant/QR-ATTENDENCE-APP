@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DownloadAttendenceController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="417.0" prefWidth="601.0" style="-fx-border-width: 2px; -fx-border-color: black;">
+         <children>
+            <BorderPane prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: black;">
+               <center>
+                  <Label text="Company Name" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <Label layoutX="144.0" layoutY="200.0" prefHeight="27.0" prefWidth="345.0" text="Get your monthly attendence record">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="dropdown" accessibleRole="CONTEXT_MENU" accessibleText="Jan" editable="true" layoutX="228.0" layoutY="261.0" prefWidth="150.0" promptText="Select the month" style="-fx-background-color: black;" />
+            <Button layoutX="246.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleDownload" prefHeight="46.0" prefWidth="114.0" style="-fx-background-color: black;" text="Download" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView layoutX="275.0" layoutY="132.0">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/icons8-download-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

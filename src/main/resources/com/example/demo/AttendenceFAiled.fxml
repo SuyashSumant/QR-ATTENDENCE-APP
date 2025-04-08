@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="398.0" prefWidth="610.0" style="-fx-border-width: 2px; -fx-border-color: black;">
+         <children>
+            <BorderPane layoutX="-3.0" layoutY="-6.0" prefHeight="96.0" prefWidth="608.0" style="-fx-background-color: black;">
+               <center>
+                  <Label text="Company Name" textFill="#fcfcfc" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+            <Label layoutX="114.0" layoutY="179.0" prefHeight="56.0" prefWidth="383.0" text="Sorry we are unbale to mark your attendence">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="229.0" layoutY="243.0" prefHeight="56.0" prefWidth="152.0" text="Please try again">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="281.0" layoutY="122.0">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/icons8-error-48%20(2).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="245.0" layoutY="320.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: black;" text="Try again" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
