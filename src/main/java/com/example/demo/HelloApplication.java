@@ -27,6 +27,8 @@ public class HelloApplication extends Application {
         ScaneManager.loadScene("AdminDash","hello-view.fxml");
         ScaneManager.loadScene("IdGen","IDgenerated.fxml");
         ScaneManager.loadScene("DeleteDataSuccess","DataDeleted.fxml");
+        ScaneManager.loadScene("adminLogin","login.fxml");
+        ScaneManager.loadScene("AttendanceSuccess","AttendenceMarked.fxml");
 
         ScaneManager.switchTo("welcome");
 

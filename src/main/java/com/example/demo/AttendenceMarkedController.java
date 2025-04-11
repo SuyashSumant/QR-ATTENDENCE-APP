@@ -2,11 +2,9 @@ package com.example.demo;
 
 import javafx.fxml.FXML;
 
-public class IDGenController {
-   @FXML
-    private  void onIDContinue(){
+public class AttendenceMarkedController {
+    @FXML
+    private  void onAttendenceSuccess(){
         ScaneManager.switchTo("AdminDash");
     }
-
-
 }

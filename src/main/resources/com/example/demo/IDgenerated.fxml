@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane alignment="center" gridLinesVisible="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="center" gridLinesVisible="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.demo.IDGenController" xmlns:fx="http://javafx.com/fxml/1">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -47,17 +41,17 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="218.0" layoutY="170.0">
-                     <image>
-                        <Image url="@../../../../../../../../Downloads/icons8-id-64.png" />
-                     </image>
-                  </ImageView>
+<!--                  <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="218.0" layoutY="170.0">-->
+<!--                     <image>-->
+<!--                        <Image url="@../../../../../../../../Downloads/icons8-id-64.png" />-->
+<!--                     </image>-->
+<!--                  </ImageView>-->
                   <Label layoutX="257.0" layoutY="167.0" prefHeight="44.0" prefWidth="11.0" text=":" textAlignment="CENTER" textFill="#6aec50">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button layoutX="244.0" layoutY="232.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0" style="-fx-background-color: #000000;" text="Continue" textFill="WHITE">
+                  <Button layoutX="244.0" layoutY="232.0" mnemonicParsing="false" onAction="#onIDContinue" prefHeight="57.0" prefWidth="112.0" style="-fx-background-color: #000000;" text="Continue" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

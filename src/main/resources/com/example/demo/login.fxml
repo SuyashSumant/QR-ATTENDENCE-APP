@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.loginController">
    <children>
       <Label layoutX="114.0" layoutY="24.0" text="Secure Login">
          <font>
@@ -26,12 +25,12 @@
       </Label>
       <TextField layoutX="130.0" layoutY="74.0" promptText="Enter the username" />
       <TextField layoutX="130.0" layoutY="121.0" promptText="Enter the password" />
-      <Button layoutX="37.0" layoutY="198.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="245.0" style="-fx-background-color: black;" text="Login" textFill="#f4f4f4">
+      <Button layoutX="37.0" layoutY="198.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="31.0" prefWidth="245.0" style="-fx-background-color: black;" text="Login" textFill="#f4f4f4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="37.0" layoutY="250.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="245.0" style="-fx-background-color: black;" text="Cancel" textFill="#f4f4f4">
+      <Button layoutX="37.0" layoutY="250.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="31.0" prefWidth="245.0" style="-fx-background-color: black;" text="Cancel" textFill="#f4f4f4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

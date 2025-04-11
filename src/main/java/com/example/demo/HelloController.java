@@ -2,13 +2,14 @@ package com.example.demo;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane; // Import GridPane
 import javafx.util.Duration;
-
+import javafx.scene.control.Button;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -39,8 +40,12 @@ public class HelloController {
         timeline.play();
     }
     @FXML
-    private void onIdGenerated() {
-        ScaneManager.switchTo("IdGen");
+    private void gotoAdminLogin() {
+        ScaneManager.switchTo("adminLogin");
+    }
+    @FXML
+    private void gotoQRScan() {
+        ScaneManager.switchTo("QRScan");
     }
 
     @FXML
@@ -50,20 +55,57 @@ public class HelloController {
 
     @FXML
     private AnchorPane bottomRightPane;
+    @FXML
+     private  Button AdddataButton;
 
     @FXML
-    private void gotoDelData() {
-        try {
-            GridPane newPane = FXMLLoader.load(getClass().getResource("/com/example/demo/DeletData.fxml")); // Change to GridPane
-            bottomRightPane.getChildren().setAll(newPane);
-        } catch (IOException e) {
-            e.printStackTrace();
-            ;
+    private  Button DeldataButton;
+
+    @FXML
+    private  Button AccessdataButton;
+
+    @FXML
+    private  Button AttendenceButton;
+@FXML
+private  AnchorPane defaultpane;
+
+
+//    @FXML
+//    private void gotoDelData() {
+//        try {
+//            GridPane newPane = FXMLLoader.load(getClass().getResource("/com/example/demo/DeletData.fxml")); // Change to GridPane
+//            bottomRightPane.getChildren().setAll(newPane);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            ;
+//        }
+      @FXML
+       protected  void gotoDelData(ActionEvent event)throws IOException{
+        loadRightPaneContent("DeletData.fxml");
+        }
+    @FXML
+    protected  void gotoAddData(ActionEvent event)throws IOException{
+        loadRightPaneContent("AddData.fxml");
+    }
+
+    @FXML
+    protected  void gotoAttendence(ActionEvent event)throws IOException{
+        loadRightPaneContent("MarkManually.fxml");
+    }
+    @FXML
+    protected  void gotoAccessData(ActionEvent event)throws IOException{
+        loadRightPaneContent("AccesData.fxml");
+    }
+
+
+        private void loadRightPaneContent(String fxmlFile)throws IOException{
+    FXMLLoader loader =new FXMLLoader(getClass().getResource(fxmlFile));
+    AnchorPane newContent=loader.load();
+
+    bottomRightPane.getChildren().clear();;
+    bottomRightPane.getChildren().add(newContent);
         }
 
-
-
-        }
     }
 
 
